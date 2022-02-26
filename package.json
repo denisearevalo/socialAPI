@@ -1,0 +1,16 @@
+{
+  "name": "socialapi",
+  "version": "1.0.0",
+  "description": "An API for a social media app built with Express, Mongoose, and MongoDB",
+  "scripts": {"start":"node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "moment": "^2.29.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
