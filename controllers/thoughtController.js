@@ -30,9 +30,9 @@ const thoughtController = {
     },
 
     // create thought to user
-    createThought({ req, body }, res) {
-        console.log(body);
-        Thought.create(body)
+    createThought( req, res) {
+        console.log(req);
+        Thought.createThought(req)
             .then(({ _id }) => {
                 return User.findOneAndUpdate(
                     { _id: req.params.userId },
