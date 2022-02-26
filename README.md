@@ -6,15 +6,20 @@ This database is designed for a social network platform. This API includes endpo
 
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Tech](#Tech)
 * [Links](#Links)
 * [Demo](#Demo)
 * [Contact](#Contact-me)
 
 
 ## Installation
-
+Once cloning the repo, run npm i in the command line to install the necessary packages.
+Then runt he server and proceed testing the routes.
 ## Usage
+Use the command line to invoke necessary packages. Then start the server. Once the server is running, open the api route with Insomnia to the successfully use CRUD functionality.
 
+## Tech 
+Javascript, Express, noSQL, MongoDB, Mongoose
 ## Links
 https://github.com/denisearevalo/socialAPI.git
 ## Demo
