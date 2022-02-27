@@ -92,7 +92,7 @@ const thoughtController = {
         if (!thoughts) {
           return res
             .status(404)
-            .json({ message: "No thought found with this ID! 😞" });
+            .json({ message: "No thought found with this ID to add reaction! 😞" });
         }
         res.json(thoughts);
       })
@@ -101,7 +101,7 @@ const thoughtController = {
 
   // delete reaction
   deleteReaction(req, res) {
-    console.log(req.params.thoughtId, req.params.reactionId);
+    //console.log(req.params.thoughtId, req.params.reactionId);
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $pull: { reactions: { reactionId: req.params.reactionId } } },

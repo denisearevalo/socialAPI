@@ -25,6 +25,8 @@ https://github.com/denisearevalo/socialAPI.git
 ## Demo
 #### Part 1
 ![load page](./assests/user-friend.gif) 
+#### Part 2
+![load page](./assests/thpughts-reactions.gif)
 ### Contact me
 Please feel free to email me with any questions or create a pull request and I will get back to you as soon as I am able.
 deniwonder8@gmail.com
