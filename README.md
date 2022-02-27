@@ -23,7 +23,8 @@ Javascript, Express, noSQL, MongoDB, Mongoose
 ## Links
 https://github.com/denisearevalo/socialAPI.git
 ## Demo
-
+#### Part 1
+![load page](./assets/user-friend.gif) 
 ### Contact me
 Please feel free to email me with any questions or create a pull request and I will get back to you as soon as I am able.
 deniwonder8@gmail.com
