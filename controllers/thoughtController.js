@@ -59,21 +59,9 @@ const thoughtController = {
   // delete thought
   deleteThoughtById(req, res) {
     Thought.findOneAndDelete({ _id: req.params.id })
-    //   .then((deletedThought) => {
-    //     if (!deletedThought) {
-    //       return res
-    //         .status(404)
-    //         .json({ message: "No thought with this ID! 😞" });
-    //     }
-    //     return User.findOneAndUpdate(
-    //       { _id: req.params.userId },
-    //       { $pull: { thoughts: req.params.thoughtId } },
-    //       { new: true }
-    //     );
-    //   })
-      .then((thoughts) => {
+        .then((thoughts) => {
         if (!thoughts) {
-          res.status(404).json({ message: "No user found with this ID! 😞" });
+          res.status(404).json({ message: "No thought found with this ID! 😞" });
           return;
         }
         res.status(200).json({message: "Bye Felicia 👋"});
@@ -101,13 +89,12 @@ const thoughtController = {
 
   // delete reaction
   deleteReaction(req, res) {
-    //console.log(req.params.thoughtId, req.params.reactionId);
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $pull: { reactions: { reactionId: req.params.reactionId } } },
+      { $pull: { reactions: { _id: req.params.reactionId } } },
       { runValidators: true, new: true }
     )
-      .then((thoughts) => res.json(thoughts))
+      .then((reactions) => res.json(reactions))
       .catch((err) => res.json(err));
   },
 };
